@@ -36,8 +36,8 @@ body {
     margin-top: 6px;
 }
 
-.img_search:hover {
-    color: #F16D7F;
+.search_link:hover {
+    filter: contrast(#f8082c);
 }
 
 .header__right {
