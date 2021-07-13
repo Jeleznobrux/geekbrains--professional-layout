@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    outline: none;
 }
 
 body {
@@ -35,13 +36,70 @@ body {
     margin-top: 6px;
 }
 
+.search_link:hover {
+    filter: contrast(#f8082c);
+}
+
 .header__right {
     display: flex;
     justify-content: space-around;
 }
 
 .top_menu_button {
-    margin: 30px 15px;
+    padding: 30px 15px;
+    text-decoration: none;
+    position: relative;
+}
+
+.mega-box {
+    padding: 20px;
+    background: #FFFFFF;
+    position: absolute;
+    width: 232px;
+    top: 75px;
+    display: none;
+}
+
+.menu-box {
+    text-decoration: none;
+}
+
+.menu-category {
+    text-decoration: none;
+}
+
+.mega-link {
+    display: block;
+    color: #6F6E6E;
+    text-decoration: none;
+    line-height: 17px;
+    padding-left: 54px;
+    padding-bottom: 11px;
+}
+
+.mega-link:hover {
+    color: #F16D7F;
+}
+
+.menu {
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-left: 34px;
+}
+
+.menu-categ {
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    padding-left: 33px;
+    padding-bottom: 12px;
+    padding-top: 9px;
+}
+
+.top_menu_button:hover .mega-box {
+    display: flex;
 }
 
 .profile {
@@ -134,10 +192,11 @@ body {
 
 .offer_aks {
     background-image: url(img/offer_aks.jpg);
+    height: 180px;
 }
 
 .text__offer {
-    padding: 105px 103px;
+    padding-top: 105px;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -145,13 +204,13 @@ body {
 }
 
 .text_bot_offer {
-    padding: 65px;
+    padding-top: 65px;
 }
 
 .text__offer_bottom {
     color: #F16D7F;
     font-size: 22px;
-    margin: 24px 0;
+    text-align: center;
 }
 
 .h1_content {
@@ -171,6 +230,10 @@ body {
     margin-bottom: 17px;
 }
 
+.content_link {
+    text-decoration: none;
+}
+
 .content_box {
     display: flex;
     flex-wrap: wrap;
@@ -180,6 +243,8 @@ body {
 .content_main {
     width: 360px;
     margin-top: 30px;
+    background: #F8F8F8;
+    position: relative;
 }
 
 .content_hig {
@@ -207,10 +272,52 @@ body {
     margin-left: 18px;
 }
 
+.button-stily {
+    display: flex;
+    justify-content: center;
+}
+
 .button_content {
     text-align: center;
     margin-top: 48px;
     margin-bottom: 95px;
+}
+
+.all_product:hover {
+    background-color: #F16D7F;
+    color: #fff;
+}
+
+.content_main:hover .img_link {
+    filter: brightness(50%);
+}
+
+.add_box {
+    display: none;
+    position: absolute;
+    top: 188px;
+    justify-content: center;
+    width: 100%;
+}
+
+.add_cart {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #FFFFFF;
+}
+
+.text_cart {
+    margin-left: 8px;
+}
+
+.add_cart:hover {
+    box-shadow: 0 0 10px #fff;
+}
+
+.content_main:hover .add_box {
+    display: flex;
 }
 
 .all_product {
@@ -285,6 +392,8 @@ body {
 .info_right {
     text-align: center;
     margin-top: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
 .info_right_sub {
@@ -309,7 +418,7 @@ body {
 
 .cube_lib {
     border-radius: 23px 0 0 23px;
-    width: 256px;
+    width: 323px;
     height: 49px;
     background: #E1E1E1;
     padding-left: 22px;
@@ -344,19 +453,54 @@ body {
     justify-content: space-between;
 }
 
-.icon_soci {
+.socials_box {
     display: flex;
-    justify-content: space-between;
-    align-content: center;
-    margin-top: 24px;
-    margin-bottom: 23px;
 }
 
-.icon {
-    align-content: center;
-    padding: 8px 9px;
+.socials_link {
+    background: #FFFFFF;
+    height: 32px;
+    width: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
     margin-right: 7px;
-    background-color: #fff;
-    border: 1px solid #000;
-    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+}
+
+.socials_link:hover {
+    background-color: #F16D7F;
+    color: #FFFFFF;
+}
+
+/*catalog*/
+
+.catalog_top {
+    height: 148px;
+    background: #F8F3F4;
+}
+
+.catalog_top_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog_left_text {
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    margin-top: 59px;
+}
+
+.catalog_right_text {
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    margin-top: 65px;
+}
+
+.catalog_right_pink {
+    color: #F16D7F;
 }
