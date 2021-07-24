@@ -19,7 +19,7 @@
             <div class="container_my">
                 <div class="header__wrapper">
                     <div class="header__left">
-                        <a href="index.html"><img src="img/top_logo.svg" alt="logo"></a>
+                        <a href="index.html"><img class="logo" src="img/top_logo.svg" alt="logo"></a>
                         <a href="#" class="search"><img class="search_link" src="img/top_search.svg" alt="search"></a>
                     </div>
                     <div class="header__right">
@@ -27,7 +27,7 @@
                             <div class="mega-box">
                                 <div class="menu-box">
                                     <h3 class="menu">MENU</h3>
-                                    <a href="#" class="menu-category">
+                                    <a href="catalog.html" class="menu-category">
                                         <h3 class="menu-categ">MAN</h3>
                                         <a class="mega-link" href="">Accesories</a>
                                         <a class="mega-link" href="">Bags</a>
@@ -54,8 +54,9 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="profile"><img src="img/profile.svg" alt="profile"></a>
-                        <a href="#" class="cart"><img src="img/cart.svg" alt="cart"><span class="count">5</span></a>
+                        <a href="registration.html" class="profile"><img src="img/profile.svg" alt="profile"></a>
+                        <a href="cart.html" class="cart"><img src="img/cart.svg" alt="cart"><span
+                                class="count">5</span></a>
                         <div class="cart__quantity"></div>
                     </div>
                 </div>
@@ -78,7 +79,38 @@
         <div class="container_my">
             <div class="cart_main">
                 <div class="cart_product">
-
+                    <div class="cart_box">
+                        <div class="cart_mega"><img src="img/content_men_hat.png" alt="photo">
+                            <div class="cart_text_order">
+                                <p class="cart_text_checkbox">MANGO PEOPLE <br>T-SHIRT</p>
+                                <p class="cart_text_checkbox_bot">Price: <span class="top__pink">$300</span></p>
+                                <p class="cart_text_checkbox_bot">Color: Red</p>
+                                <p class="cart_text_checkbox_bot">Size: Xl </p>
+                                <div class="size_cart">
+                                    <p class="cart_text_checkbox_bot">Quantity: </p>
+                                    <input class="quantity_cart" type="number" min="1" value="1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_box margin_cart_box_last">
+                        <div class="cart_mega"><img src="img/catalog_2.png" alt="photo">
+                            <div class="cart_text_order">
+                                <p class="cart_text_checkbox">MANGO PEOPLE <br>T-SHIRT</p>
+                                <p class="cart_text_checkbox_bot">Price: <span class="top__pink">$300</span></p>
+                                <p class="cart_text_checkbox_bot">Color: Red</p>
+                                <p class="cart_text_checkbox_bot">Size: Xl </p>
+                                <div class="size_cart">
+                                    <p class="cart_text_checkbox_bot">Quantity: </p>
+                                    <input class="quantity_cart" type="number" min="1" value="1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button_cart_main">
+                        <button class="reset_but_cart" type="reset">CLEAR SHOPPING CART </button>
+                        <a class="cart_but_back" href="product.html">CONTINUE SHOPPING</a>
+                    </div>
                 </div>
                 <div class="forma_order">
                     <form class="cart_button" action="">
@@ -86,16 +118,20 @@
                         <input class="sipping_link" type="text" placeholder="Bangladesh">
                         <input class="sipping_link" type="text" placeholder="State">
                         <input class="sipping_link" type="text" placeholder="Postcode / Zip">
-                        <input class="sipping_link" type="text" placeholder="GET A QOUTE">
+                        <button class="sub_address" type="submit" placeholder="">GET A QOUTE</button>
                     </form>
                     <form class="order_botton" action="">
-                        <span class="sub_total_text">SUB TOTAL $900</span>
-                        <span class="grand_total_text">GRAND TOTAL <span class="price_product">$900</span></span>
-                        <button class="button-stily" type="submit">
-                            <div class="button_content">
-                                <a href="#" class="all_product"><img src="img/cart_product.svg" alt=""> <span
-                                        class="button_cart_product">Add to Cart</span>
-                                </a>
+                        <div class="sub_total_text">
+                            <p class="text_check_top">SUB TOTAL</p>
+                            <p class="text_check_margin">$900</p>
+                        </div>
+                        <div class="grand_total_text">
+                            <p class="text_check_top text_check_left">GRAND TOTAL</p>
+                            <p class="text_checK_bot">$900</p>
+                        </div>
+                        <hr class="line_checkout">
+                        <button class="button_checkout" type="submit">
+                            PROCEED TO CHECKOUT
                         </button>
                     </form>
                 </div>
