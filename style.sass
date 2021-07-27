@@ -18,6 +18,14 @@ body
     background-color: #222222
     height: 75px
 
+.logo:hover
+    display: inline-block
+    animation: rotation 2s infinite
+
+@keyframes rotation
+    100%
+        transform: rotate(360deg)
+
 .header__wrapper
     display: flex
     justify-content: space-between
@@ -147,6 +155,9 @@ body
     width: 360px
     height: 260px
     margin-bottom: 30px
+    transition: all 0.5s
+    &:hover
+        transform: scale(1.1)
 
 .offer_link
     text-decoration: none
@@ -170,6 +181,10 @@ body
     line-height: 19px
     text-align: center
     color: #FFFFFF
+.bottom__offer
+    transition: all 0.5s
+    &:hover
+        transform: scale(1.1)
 
 .text_bot_offer
     padding-top: 65px
@@ -263,7 +278,6 @@ body
 
 .text_cart
     margin-left: 8px
-    margin-top: 10px
     color: #fff
 
 .add_cart:hover
@@ -370,6 +384,10 @@ body
     border: 0
     text-align: center
     color: #FFFFFF
+    &:hover
+        background-color: #fff
+        color: $text-color
+        border: 1px solid $text-color
 
 .footer_copy
     height: 79px
@@ -440,7 +458,8 @@ body
 
 .catalog_wrapped
     display: flex
-    height: 133px
+    padding-top: 51px
+    padding-bottom: 61px
     align-content: center
 .catalog_top_right
     display: flex
@@ -459,6 +478,7 @@ body
     color: #6F6E6E
     margin-right: 10px
     display: flex
+    position: relative
 
 .catalog_filter_text
     font-weight: 600
@@ -468,12 +488,15 @@ body
     margin-right: 11px
 .size_sum
     list-style-type: none
+    position: relative
 .fa-angle-down
     margin-left: 10px
 
 .menu_catalog
     list-style-type: none
-
+    padding-left: 0
+    margin-bottom: 0
+    position: absolute
 .text_check
     margin-left: 9px
     color: #6F6E6E
@@ -484,7 +507,7 @@ body
     background: #FFFFFF
     position: absolute
     width: 232px
-    top: 300px
+    top: 290px
     display: none
 
 .menu-box-catalog
@@ -665,8 +688,7 @@ body
     height: 45px
     margin-bottom: 20px
     padding-left: 17px
-    &:last-of-type
-        width: 110px
+    border: 1px solid #A4A4A4
 .forma_order
     display: flex
     flex-direction: column
@@ -674,15 +696,174 @@ body
     display: flex
     flex-direction: column
     align-items: flex-end
+    background-color: #F5F3F3
+    margin-top: 57px
 .sub_total_text
-    margin-top: 117px
+    margin-top: 39px
     margin-bottom: 12px
     font-size: 11px
     line-height: 13px
     color: #4A4A4A
+    display: flex
+    justify-content: space-between
 
 .grand_total_text
     font-weight: 300
     font-size: 16px
     line-height: 19px
     color: #222222
+    display: flex
+.sub_address
+    text-align: center
+    width: 100px
+    font-weight: 300
+    font-size: 11px
+    line-height: 13px
+    padding: 10px 14px 12px 15px
+    color: #4A4A4A
+    background-color: #fff
+    border: 1px solid #A4A4A4
+.button_checkout
+    text-align: center
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    background-color: $text-color
+    color: #FFFFFF
+    border: 1px solid $text-color
+    padding: 15px 43px 16px 41px
+    margin-right: 43px
+    margin-top: 17px
+    margin-bottom: 42px
+    &:hover
+        color: $text-color
+        background-color: #fff
+
+.line_checkout
+    width: 275px
+    align-self: center
+    margin-top: 21px
+.text_check_top
+    margin-right: 20px
+.text_checK_bot
+    color: $text-color
+    margin-right: 34px
+.text_check_left
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: #222222
+.text_check_margin
+    margin-right: 37px
+p
+    margin-bottom: 0px
+.size_cart
+    display: flex
+.cart_mega
+    display: flex
+    height: 306px
+.cart_top_order
+    display: flex
+    justify-content: space-between
+.cart_text_order
+    flex-grow: 1
+.fa-times
+    margin-top: 28px
+    margin-right: 22px
+    &:hover
+        color: $text-color
+.cart_text_checkbox
+    font-size: 24px
+    line-height: 29px
+    color: #222222
+    margin-bottom: 42px
+    margin-top: 22px
+    margin-left: 32px
+    margin-right: 97px
+.cart_text_checkbox_bot
+    font-size: 22px
+    line-height: 26px
+    color: #575757
+    margin-bottom: 6px
+    margin-left: 32px
+.quantity_cart
+    width: 44px
+    text-align: center
+    margin-left: 24px
+.cart_box
+    background: #FFFFFF
+    margin-top: 96px
+    box-shadow: -1px -1px 16px 12px rgba(204,194,194,0.75)
+.margin_cart_box_last
+    margin-top: 42px
+.button_cart_main
+    display: flex
+    justify-content: space-between
+    margin-top: 72px
+    margin-bottom: 128px
+.reset_but_cart
+    padding: 17px 40px
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    color: #000000
+    border: 1px solid #A4A4A4
+    background-color: #fff
+    &:hover
+        background-color: $text-color
+        border: 1px solid $text-color
+        color: #fff
+.cart_but_back
+    padding: 17px 40px
+    border: 1px solid #A4A4A4
+    text-decoration: none
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    color: #000000
+    &:hover
+        background-color: $text-color
+        border: 1px solid $text-color
+        color: #fff
+
+/*registration*/
+.registr_main
+    display: flex
+    justify-content: space-between
+.reg_info
+    display: flex
+    flex-direction: column
+.regi_join
+    width: 167px
+    padding: 17px 30px
+.join_arrow
+    margin-left: 20px
+.sex_type_check
+    margin-left: 20px
+.text_sex
+    margin-left: 10px
+    font-size: 11px
+    line-height: 13px
+    color: #000000
+.margin_yourname
+    margin-top: 64px
+    margin-bottom: 20px
+.reg_conditions
+    font-size: 13px
+    line-height: 16px
+    color: #B1B1B1
+    margin-bottom: 39px
+.register_box
+    font-family: Lato
+    font-style: normal
+    margin-left: 128px
+    font-size: 24px
+    line-height: 29px
+    color: #000000
+    margin-bottom: 22px
+.margin_top_reg_box
+    margin-top: 64px
+.fa-check
+    margin-right: 23px
+.margin_top_login
+    margin-top: 34px
